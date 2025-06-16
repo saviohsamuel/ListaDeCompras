@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="App de anotações de compras">
+    <title>Quicklist</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <main id="app" class="flex">
+        <img src="imgs/quicklist.svg" alt="Logo da Quicklist" class="logo">             
+        <button class="back flex f-a-center">
+            <img src="imgs/arrow-back.svg" alt="Icone de seta para voltar">
+            Voltar
+        </button>          
+        <h2>Compras da semana</h2>     
+        <form action="">
+            <div class="container__submit flex f-a-center">
+                <input type="text" placeholder="Adicione um novo item" class="new__item">
+                <button class="submit">Adicionar item</button>
+            </div>
+            <div class="container__wrapper flex">
+                <div class="input__wrapper flex f-a-center">
+                    <div class="input flex f-a-center">
+                        <input type="checkbox">
+                        <label for="">pão de forma</label>
+                    </div>
+                    <button class="delete">
+                        <img src="imgs/trash.svg" alt="Icone de lixeira para apagar o item da lista">
+                    </button>                
+                </div>
+                <div class="input__wrapper flex f-a-center">
+                    <div class="input flex f-a-center">
+                        <input type="checkbox">
+                        <label for="">café preto</label>
+                    </div>
+                    <button class="delete">
+                        <img src="imgs/trash.svg" alt="Icone de lixeira para apagar o item da lista">
+                    </button>                
+                </div>
+                <div class="input__wrapper flex f-a-center">
+                    <div class="input flex f-a-center">
+                        <input type="checkbox">
+                        <label for="">suco de laranja</label>
+                    </div>
+                    <button class="delete">
+                        <img src="imgs/trash.svg" alt="Icone de lixeira para apagar o item da lista">
+                    </button>                
+                </div>
+                <div class="input__wrapper flex f-a-center">
+                    <div class="input flex f-a-center">
+                        <input type="checkbox">
+                        <label for="">bolacha</label>
+                    </div>
+                    <button class="delete">
+                        <img src="imgs/trash.svg" alt="Icone de lixeira para apagar o item da lista">
+                    </button>                
+                </div>                                                                                                                                                  
+            </div>
+        </form> 
+        <div class="container__danger flex f-a-center">
+            <div class="danger flex f-a-center">
+                <img src="imgs/danger.svg" alt="Icone de aviso - simbolo de exclamação">
+                <span>O item <span class="list__item"></span> foi removido da lista</span>
+            </div>
+            <button class="close__danger">
+                <img src="imgs/close.svg" alt="Icone de X para fechar">
+            </button>            
+        </div>
+    </main>    
+    <script src="scripts.js"></script>
+</body>
+</html>
