@@ -45,3 +45,8 @@ button {
 .f-a-center {
     align-items: center;
 }
+@media (min-width: 320px) and (max-width: 560px) {
+    body {
+        overflow: initial;
+    }
+}
