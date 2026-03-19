@@ -113,6 +113,10 @@ input[type="checkbox"]:hover {
         font-size: .5625rem;
         text-align: center;
     }
+    input[type="checkbox"]:checked + label {
+        color: var(--content-tertiary);
+        text-decoration: line-through;
+    }
     & label {
         color: var(--content-secondary);
         font: var(--paragraph-f-family);
